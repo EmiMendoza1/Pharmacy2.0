@@ -1,0 +1,332 @@
+/* Nuevo estilo para el menú lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(14px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+
+.sidebar-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 28px;
+    margin-bottom: 14px;
+    background: linear-gradient(90deg, #049227 0%, #065524 100%);
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.5px;
+    transition: background 0.25s, box-shadow 0.25s, color 0.2s, transform 0.18s;
+    box-shadow: 0 2px 12px rgba(1,85,46,0.10);
+    outline: none;
+}
+.sidebar-btn:hover, .sidebar-btn:focus {
+    background: linear-gradient(90deg, #065524 0%, #049227 100%);
+    color: #eafff7;
+    box-shadow: 0 4px 18px rgba(1,85,46,0.18);
+    transform: translateX(6px) scale(1.04);
+}
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: block;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+/* Menú lateral fijo y visualmente mejorado */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #065524, #049227);
+    box-shadow: 2px 0 8px rgba(96, 236, 229, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    z-index: 1100;
+}
+
+.sidebar-logo img {
+    width: 120px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 4px;
+    margin-bottom: 24px;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-links li {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.sidebar-links a, .sidebar-links .btn {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background 0.2s, box-shadow 0.2s;
+    width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.sidebar-links a:hover, .sidebar-links .btn:hover {
+    background: #038b31;
+    box-shadow: 0 2px 8px rgba(96, 236, 229, 0.18);
+}
+
+#registrar-submenu {
+    background: #049227;
+    border-radius: 0 0 12px 12px;
+    margin-top: -8px;
+    box-shadow: 0 2px 8px rgba(96, 236, 229, 0.12);
+}
+
+body, html {
+    margin-left: 220px !important;
+}
+/* Centrado y caja con bordes redondeados para formularios y listados */
+.form-producto-container, .main-content, .tabla-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 32px; /* quitar margen superior, mantener separación inferior */
+    max-width: 700px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(1,85,46,0.08);
+    padding: 24px 18px;
+}
+
+.table-responsive, .container-listado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 32px; /* quitar margen superior, mantener separación inferior */
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(1,85,46,0.08);
+    padding: 24px 18px;
+}
+
+form .mb-3, form .input-group {
+    margin-bottom: 1px !important;
+    padding-bottom: 0 !important;
+}
+}
+/* Espaciado para los botones '+ nuevo' */
+.btn-nuevo {
+    margin-top: 32px !important;
+}
+/* Reset para eliminar espacios en blanco */
+/* Elimina todos los márgenes y padding por defecto del navegador */
+body, html {
+    margin: 0 !important; /* Elimina márgenes externos */
+    padding: 0 !important; /* Elimina padding interno */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Margen superior para que el contenido no quede debajo de la navbar fija */
+body, html, .container, .login-container, .inicio-container, .main-content, .table-responsive, .login-box {
+    margin-top: 0 !important;
+}
+
+/* Ajuste para módulos con clases personalizadas */
+.form-producto-container,
+.tabla-contenedor,
+.titulo-listado,
+.mb-3,
+.d-flex,
+.table-producto,
+.table,
+.table-responsive,
+.modal-content {
+    margin-top: 0 !important;
+}
+
+/* Margen superior para que el contenido no quede debajo de la navbar fija */
+.container, .login-container, .inicio-container, .main-content, .table-responsive {
+    margin-top: 0 !important;
+}
+
+/* Estilos para el encabezado de la página */
+header {
+    margin: 0 !important; /* Elimina márgenes del encabezado */
+    padding: 0 !important; /* Elimina padding del encabezado */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    left: 0;
+    right: 0;
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Evitar solapamiento con header fijo */
+.container, .main-content {
+    padding-top: 64px !important; /* espacio igual o superior a la altura del header */
+}
+
+/* Barra de navegación personalizada */
+.custom-navbar {
+    background: linear-gradient(to right, #280655, #330492); /* Fondo degradado verde de izquierda a derecha */
+    padding: 0; /* Sin padding interno */
+    margin: 0; /* Sin márgenes externos */
+    box-shadow: 0 2px 8px rgba(166, 96, 236, 0.518); /* Sombra con color turquesa semi-transparente */
+    width: 100vw !important; /* Ocupa todo el ancho de la ventana */
+    min-width: 100vw;
+    max-width: 100vw;
+    position: relative; /* Posición relativa para el posicionamiento de elementos hijos */
+    left: 0; /* Alineado a la izquierda */
+    right: 0; /* Alineado a la derecha */
+    border-radius: 0 !important;
+}
+
+/* Contenedor principal de la barra de navegación */
+.navbar-container {
+    display: flex; /* Usa flexbox para organizar elementos */
+    align-items: center; /* Centra elementos verticalmente */
+    justify-content: space-between; /* Distribuye elementos con espacio entre ellos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 0; /* Sin márgenes externos */
+    padding: 0 24px; /* Reducido de 24px a 8px para más espacio útil */
+    height: 60px; /* Altura fija de 60px */
+}
+
+/* Estilos para el logo de la farmacia */
+.navbar-logo img {
+    height: 40px; /* Altura fija del logo */
+    border-radius: 8px; /* Bordes redondeados */
+    background: #fff; /* Fondo blanco */
+    padding: 2px; /* Padding interno de 2px */
+}
+
+/* Lista de enlaces de navegación */
+.navbar-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa flexbox para organizar elementos */
+    gap: 18px; /* Espacio de 18px entre elementos */
+    margin: 0; /* Sin márgenes externos */
+    padding: 0; /* Sin padding interno */
+}
+
+/* Elementos individuales de la lista de navegación */
+.navbar-links li {
+    display: flex; /* Usa flexbox para centrar contenido */
+    align-items: center; /* Centra elementos verticalmente */
+}
+
+/* Enlaces de navegación */
+.navbar-links a {
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: 500; /* Peso de fuente medio */
+    font-size: 1rem; /* Tamaño de fuente de 16px */
+    padding: 8px 14px; /* Padding interno vertical 8px, horizontal 14px */
+    border-radius: 6px; /* Bordes redondeados */
+    transition: background 0.2s; /* Transición suave del fondo al hacer hover */
+}
+
+/* Efecto hover para enlaces de navegación */
+.navbar-links a:hover, .navbar-links .logout-link:hover, .navbar-links .dropdown-toggle:hover {
+    background: #3c038b; /* Fondo verde más claro al pasar el mouse */
+}
+
+/* Enlace de cerrar sesión */
+.logout-link {
+    background: #220655; /* Fondo verde oscuro */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Dropdown de Bootstrap personalizado */
+.navbar-links .dropdown-menu {
+    background: #390655; /* Fondo verde oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    min-width: 500px; /* Ancho mínimo de 500px */
+    box-shadow: 0 10px 50px rgba(96, 236, 229, 0.18); /* Sombra con color turquesa */
+    padding: 0.3rem 0; /* Padding vertical de 0.3rem */
+}
+
+/* Elementos del menú desplegable */
+.navbar-links .dropdown-item {
+    color: #fff; /* Color de texto blanco */
+    background: transparent; /* Fondo transparente */
+    font-weight: 500; /* Peso de fuente medio */
+    padding: 8px 18px; /* Padding interno */
+    border-radius: 6px; /* Bordes redondeados */
+    transition: background 0.2s, color 0.2s; /* Transición suave del fondo y color */
+}
+
+/* Efecto hover para elementos del menú desplegable */
+.navbar-links .dropdown-item:hover, .navbar-links .dropdown-item:focus {
+    background: #3c038b; /* Fondo verde más claro al pasar el mouse */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Flecha del menú desplegable */
+.navbar-links .dropdown-toggle::after {
+    margin-left: 0.4em; /* Margen izquierdo para la flecha */
+}
+
+/* Estilos responsivos para pantallas pequeñas (móviles) */
+@media (max-width: 700px) {
+    /* Contenedor de navegación en móviles */
+    .navbar-container {
+        flex-direction: column; /* Organiza elementos en columna */
+        align-items: flex-start; /* Alinea elementos al inicio */
+        height: auto; /* Altura automática */
+        padding: 8px 8vw; /* Padding reducido */
+    }
+    
+    /* Lista de enlaces en móviles */
+    .navbar-links {
+        flex-direction: column; /* Organiza enlaces en columna */
+        gap: 8px; /* Espacio reducido entre elementos */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+    
+    /* Enlaces en móviles */
+    .navbar-links a {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        display: block; /* Muestra como bloque */
+    }
+}

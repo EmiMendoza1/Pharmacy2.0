@@ -1,0 +1,242 @@
+/* Estilizar el select (Selección de Rol) */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgb(61, 235, 212);
+    cursor: pointer;
+}
+
+.input-group select:focus {
+    border-color: #04881a;
+    outline: none;
+}
+/* Reset de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 1er linea Fondo con degradé verde, 2da linea fondo con img*/
+body {
+    background: white;
+    min-height: 100vh;
+}
+
+body.signup-page {
+    min-height: 100vh;
+    background-image: url('../assets/fondo1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.signup-page > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(13, 255, 86, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 26px;
+    color: #013818;
+    font-weight: bold;
+}
+
+.login-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-box {
+    width: 100%;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px !important;
+    font-size: 15px;
+    transition: border 0.4s ease-in-out;
+    background: #fff;
+    color: #333;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #038b0e;
+    outline: none;
+}
+
+.input-group select {
+    cursor: pointer;
+    background-color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #01552e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #037003;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #30a30d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(13, 255, 86, 0.2);
+    max-width: 600px;
+    width: 100%;
+    min-width: 350px;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 30px auto;
+}
+
+#contactos-persona {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #a9f1d9;
+    border-radius: 8%;
+    padding: 10px;
+}
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contacto-item select,
+.contacto-item input {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 120px;
+}
+.contacto-item input {
+    min-width: 180px;
+}
+.btn-contacto {
+    background: #e0e0e0;
+    border: none;
+    color: #01552e;
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+}
+.btn-contacto:hover {
+    background: #b2f2c2;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 24px;
+    margin-bottom: 18px;
+}
+@media (max-width: 800px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*body {
+    min-height: 100vh;
+    background: radial-gradient(
+    circle at 60% 40%,
+    #bef2cf 0%,      
+    #b2f2c2 35%,     
+    #04c47a 70%,     
+    #014d2c 100%     
+    );
+}*/
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.validation-error {
+    border: 2px solid red !important;
+    background-color: rgba(198, 82, 82, 0.15) !important;
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.2) !important;
+}
+
